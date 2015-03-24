@@ -1,0 +1,206 @@
+4 rooms: KITCHEN / LIVING ROOM / BATHROOM / BEDROOM
+Wake up in bedroom. There's a creature, that direclty kill when he sees or hears.
+Objective: find a way out.
+Main door: locked. Key? swallowed by the creature.
+Solution: make the creature vomit.
+Ingredients: eggs + flour + brocoli + metal + glass + raw meat
+put the meal on table in living room
+creature eats then throw up on the floor (key found!)
+OBJECTIVE: try to attract the creature in another room
+solution: water in bathroom (bathtub + tap)
+wait in kitchen
+then key found + ESCAPE!
+
+
+(1DEAD) An evil creature stands before you and rip you apart. You're DEAD.
+(2DEAD) The door opens and something steps inside. 
+You just have the time to see the creature before it rips you apart. 
+You're DEAD.
+(3DEAD) Your stealth skills are too low. The creature turns, stands before you, 
+and rips you apart. You're DEAD.
+(4DEAD)You really thought it would save you? The creature noticed your presence,
+comes to you whatever the obsacle and rips you apart. You're DEAD.
+(5DEAD) You suddenly feel sick. You throw up and pass away.
+You're DEAD.
+(6DEAD) You're not strong enough. What were you thinking?
+The creature stands before you and rips you apart.
+You're DEAD.
+(7DEAD) Huhuh. You're DEAD.
+
+(1) You slowly begin to wake up, still a bit groggy. You realize that you are in
+your bed in the middle of the night. Something seems strange...
+Before you're able to figure out what it is, you hear faint cracking door coming from outside.
+-> (1DEAD) you open your door and scream "Who goes there?"
+-> (2) you silently go to your door and try to overhear another noise.
+-> (3) you grab a light torch and hide in your cupboard.
+(2) At the door, you can hear very light steps comming in your direction.
+-> (2DEAD) you silently go to your bed, pretending nothing happened
+-> (4) you quickly hide under your bed.
+-> (5) you don't move.
+(3) 5 seconds after your hiding, something enters in your room. 
+You can't see it clearly, but you suddenly feel terror by its presence.
+This creature wants you no good.
+-> You don't move.
+-> You make yourself as small as possible.
+-> (1DEAD)you go out of the cupboard and beat the creature with your lightswitch.
+(4) A few seconds later, something enters in the room.
+You can only see its bare feet coming and turning around in the room.
+The creature faces your bed. You can hear it pulling over the blanket.
+The creature grunts and leaves the room, leaving the door opened.
+This creature wants you no good.
+-> (4DEAD) You close the door, lock it, block it with a chair and hide under your bed again.
+-> (3DEAD) You follow the creature, stealthy.
+-> (6) You wait a little and then go to the next room. (living room)
+(5) The creature steps inside the room.
+However, you are hidden behind the door, so it cannot see you.
+It turns around, pull over the blanket, grunts then goes away, leaving the door opened.
+You have now time to think.
+-> (6) You go to the next room (living room)
+-> You close the door and go back to sleep.
+-> (3DEAD) You stealthily follow the creature.
+(6) You arrive in the living room, empty.
+OBJECTIVE: Leave the house unharmed.
+The room is connected to three other rooms: your bedroom, the kitchen, and the bathroom.
+On the table, in the middle of the room, there is a broken vase, with dry flowers and no spilled water.
+The exit is at the opposite of the room.
+-> (8) You go to the exit door.
+-> Unaware of where the creature might be, you want to check the bathroom.
+-> You prefer to go to the kitchen.
+(4DEAD)You really thought it would save you? The creature noticed your presence,
+comes to you whatever the obsacle and rips you apart. You're DEAD.
+(8) The door is locked. You have to find the key to open it.
+-> You go to the kitchen.
+-> (10) You check key holder.
+-> (9) You check the vase on the table.
+(9) The vase is completely broken, the flowers are completely dry and there are
+no spilled water. You remember them to very healthy the previous day.
+DISCOVERY: The creature has to do something with water.
+-> You want to eavesdrop on the bathroom.
+-> You prefer to eavesdrop to the kitchen.
+-> (10) You check the key holder.
+(10) The key were supposed to be there, but they have purposely been removed.
+DISCOVERY: The creature has to do something with the key.
+-> (12) You want to eavesdrop on the bathroom
+-> (11) You want to eavesdrop on the kitchen
+-> (9) You check the vase on the table.
+(11) You can hear noises through the door. Through the key hole, you
+can see a very dark shape, that seems to eat, kind of, something.
+DISCOVERY: the creature must have eaten the key.
+OBJECTIVE: Make the creature vomit to get the key back.
+-> You enter the room.
+-> You want to eavesdrop the bathroom.
+-> You don't move.
+(12) You can't hear anything. You don't see anyhting through the keyhole either.
+-> (13) You enter the room
+-> (11) You eavesdrop the kitchen
+-> (12) You check again.
+(13) The bathroom is empty. There's a bath tub, the toilet, a little shelf with medications,
+perfumes and razors just over "un evier".
+-> (14) You "fais couler l'eau du bain"
+-> You use the razor, perfume, and random medications.
+-> You go back to the living room.
+(14) The water makes noises.
+-> (2DEAD) You don't move
+-> (15) You rush to your bedroom and hide
+-> (4DEAD) You go against the door to block it, just in case.
+(15) You're in your bedroom, hearing the "l'écoulement de" water.
+Through the keyhole, you can see the creature moving
+from the kitchen to the bathroom through the living room.
+-> (16) You don't move.
+-> You go to the kitchen.
+-> (19) You eavesdrop on the bathroom door.
+(16) Nothing changes. The creature do not seem to move.
+-> You eavesdrop on the bathroom's door
+-> You go to the kitchen door
+-> (16) You don't move.
+(17) Nothing changes. The creature looks very hungry.
+-> (17) You don't move.
+-> (12) You want to eavesdrop on the bathroom.
+-> (1DEAD) You enter the room.
+(18) You are now shaved (Where you needed to be) and you smell good. 
+You're healthy, so there's no need to take pills or whatever.
+-> (18) You perfume and shave again.
+-> (11) You eavesdrop on the kitchen door
+-> (14) You fais couler de l'eau of the bathtub
+(19) You can see the creature drinking the water of the bathtub trhough the keyhole.
+It won't move until there's no water left.
+-> You go to the kitchen
+-> (19) You don't move.
+-> (TRUCALACON)
+(20) In the kitchen, you can see pieces of food everywhere on the floor.
+Funny thing. They're completly dry.
+-> You check the refrigirator if there's anything to eat.
+-> You check the cupboard fi there's anything left to eat.
+-> (19) You eavesdrop on the bathroom door.
+(21) The refregirator is a mess. But you can find a rotten egg, two pieces of raw meat
+(that were supposed to be eaten 2 weeks ago). You take them with you.
+Could be useful!
+-> You check the cupboard if there's anything left to eat.
+-> You start to bake a pixture with your ingredients.
+    -> (if cupboard checked)
+    -> (if not)
+-> (5DEAD) You eat the ingredients.
+(22) The cupboard is a mess. But you can find flour, pieces of glass and a "vis".
+You take them with you. Could be useful!
+-> You start to bake a mixture with your ingredients.
+    -> (if refregirator checked)
+    -> (if not)
+-> You check the refregirator
+-> (5DEAD) You eat the ingredients
+(23) There's something missing...
+-> You check the refregirator
+-> You check the cupboard
+-> (5DEAD) You eat the ingredients.
+(24) The mixture looks surprinsgly good. But it smells so bad...
+-> You put the mixture on the living room's table and hide in your bedroom.
+-> You turn on the tap water
+-> (5DEAD) eat the mixture.
+(25) No movements. You need to do something to put the creature out of the bathroom.
+-> (2DEAD) You go see the the creature and say "I have something for you on the table!"
+-> You go back in the kitchen
+-> (4DEAD) You're too tired to do anything else and go to sleep.
+(26) In the kitchen, you can see the refregirator, a cupboard, and an "évier".
+-> (27) You turn on the water from the kitchen, and hide in your bedroom.
+-> (5DEAD) You eat what the creature left on the ground, you're so hungry!
+-> (25) You come back to your bedroom.
+(27) It worked! The creature is coming out of the bathroom.
+It sees the plate on the table. It gets close to it, smells it, unleash a grunt then
+go to the kitchen, attracted by the noise.
+Maybe the mixture smelled too bad?
+-> (28) You eavesdrop on the kitchen door
+-> You go to the bathroom
+-> You don't move.
+(28) You can see the monster going around, surely looking for you.
+-> You go to the bathroom
+-> You go back in your bedroom
+-> (1DEAD) You enter and scream "Here I am bitch!"
+(29) In the bathroom, water keeps running. You can see perfume, a razor and medications
+on a shelf.
+-> (30) You take the perfume with you, use it on the mixture, turn of the water and hide in your room.
+-> (32) You take the razor with you.
+-> You turn off the water.
+(30) The creature noticed the absence of noise in the bathroom.
+Through the keyhole of your bedroom, you see the creature going out of the kitchen.
+It sees the mixture on the table, smells it. No grunt. It eats it all.
+Then, the creature suffocates, throws up, then goes to the bathroom.
+-> (31) You check what it just threw up.
+-> (5DEAD) You eat what he threw up.
+-> ?
+(31) Everything's dry, aaaaand there's the key!
+-> (?DEAD) Screw that key, I want to hug the creature.
+-> (END) You use it to open the EXIT door.
+-> (1) You wake up.
+(32) You have a razor with you.
+-> (6DEAD) You kill the creature with it
+-> (7DEAD) You commit suicide.
+-> (29) You put it back on the shelf.
+(33) 
+(END) You made it! You're out of your appartement!
+SUCCESS! (End of the game)
+
+
+
+
+
+
+
