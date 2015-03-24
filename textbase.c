@@ -1,4 +1,4 @@
-#include <stdio.h>
+
 #include <stdlib.h>
 #include <termios.h>
 //#include <curses.h>
@@ -9,43 +9,43 @@
 #define GREEN   "\033[32m"      /* Green */
 #define BLUE    "\033[34m"      /* Blue */
 #define PINK    "\033[35m"      /* Pink */
- #define HEY     "\033[30m"      /* ?  */
- #define WHITE   "\033[37m"      /* White */
+#define HEY     "\033[30m"      /* ?  */
+#define WHITE   "\033[37m"      /* White */
 
- void WakeUp();           //Situation 1
- void HearAtDoor();       //Situation 2
- void HideInCupboard();   //Situation 3
- void HidingUnderBed();   //Situation 4
- void HidingBehindDoor(); //Situation 5
- void LivingRoom();       //Situation 6
- void ExitLocked();       //Situation 8
- void BrokenVase();       //Situation 9
- void KeyHolder();        //Situaiton 10 
- void CreatureKitchen();  //Situation 11
- void EmptyBathroom();    //Situation 12
- void EnterBathroom();    //Situation 13
- void Bathtub();          //Situation 14
- void BedroomRush();      //Situaiton 15
- void BedroomStay(int n); //Situation 16
- void KitchenStay(int n); //Situation 17
- void ShavedandPerfumed(int n); //Situation 18
- void CreatureInBathroom(); //Situation 19
- void EmptyKitchen();     //Situation 20
- void Refregirator();     //Situation 21
- void Cupboard();         //Situation 22
- void SomethingMissing(); //Situation 23
- void Mixture();          //Situation 24
- void StuckCreatureBath(); //Situation 25
- void Kitchen();          //Situation 26
- void TapWaterKitchen();  //Situation 27
- void LookKitchen();      //Situation 28
- void WaterinBathroom();  //Situation 29
- void LookBedroom();      //Situation 30
- void CheckVomit();       //Situation 31
- void Razor();            //Situation 32
- void EndOfGame();        //SUCCESS! End of game
+void WakeUp();           //Situation 1
+void HearAtDoor();       //Situation 2
+void HideInCupboard();   //Situation 3
+void HidingUnderBed();   //Situation 4
+void HidingBehindDoor(); //Situation 5
+void LivingRoom();       //Situation 6
+void ExitLocked();       //Situation 8
+void BrokenVase();       //Situation 9
+void KeyHolder();        //Situaiton 10 
+void CreatureKitchen();  //Situation 11
+void EmptyBathroom();    //Situation 12
+void EnterBathroom();    //Situation 13
+void Bathtub();          //Situation 14
+void BedroomRush();      //Situaiton 15
+void BedroomStay(int n); //Situation 16
+void KitchenStay(int n); //Situation 17
+void ShavedandPerfumed(int n); //Situation 18
+void CreatureInBathroom(); //Situation 19
+void EmptyKitchen();     //Situation 20
+void Refregirator(int n, int refregirator, int cupboard);     //Situation 21
+void Cupboard(int n, int refregirator, int cupboard);         //Situation 22
+void SomethingMissing(int n, int refregirator, int cupboard); //Situation 23
+void Mixture();          //Situation 24
+void StuckCreatureBath(); //Situation 25
+void Kitchen();          //Situation 26
+void TapWaterKitchen();  //Situation 27
+void LookKitchen();      //Situation 28
+void WaterinBathroom();  //Situation 29
+void LookBedroom();      //Situation 30
+void CheckVomit();       //Situation 31
+void Razor();            //Situation 32
+void EndOfGame();        //SUCCESS! End of game
 
- char *situation;
+char *situation;
 
  /****
  char getch()
@@ -165,13 +165,13 @@
 
    printf("A few seconds later, something enters in the room.\n");
    printf("You can only see its bare feet coming and turning around in the roo");
-   printf("m.\n The creature faces your bed. You can hear it pulling over the ");
-   printf("blanket.\n The creature grunts and leaves the room, leaving the ");
+   printf("m.\n The creature faces your bed. You can hear it pulling over the");
+   printf(" blanket.\n The creature grunts and leaves the room, leaving the ");
    printf("door opened.\n This creature wants you no good.\n\n");
 
    printf("(1) You close the door, lock it and hide again under the bed\n");
    printf("(2) You follow the creature, stealthy.\n");
-   printf("(3) You wait a little and then go to the next room (living room).\n");
+   printf("(3) You wait a little and then go to the Livingroom.\n");
 
    char stri;
    stri = getchar();
@@ -215,9 +215,9 @@
    printf(PINK"OBJECTIVE"WHITE": Leave the house unharmed.\n");
    printf("The room is connected to three other rooms: your bedroom, ");
    printf("the kitchen and the "BLUE"bathroom"WHITE".\n");
-   printf("On the table, in the middle of the room, there is a broken vase, wi");
-   printf("th"BLUE" dry"WHITE" flowers and no spilled"BLUE" water" WHITE ".\n");
-   printf("The " GREEN "EXIT" WHITE " is at the opposite side of the room.\n\n");
+   printf("On the table, in the middle of the room, there is a broken vase\n");
+   printf(", with"BLUE" dry"WHITE" flowers and no spilled"BLUE" water"WHITE".");
+   printf("\nThe "GREEN"EXIT"WHITE" is at the opposite side of the room.\n\n");
 
 
    printf("(1) You go to the" GREEN " EXIT" WHITE " door.\n");
@@ -500,7 +500,7 @@ void EmptyKitchen()
   system("clear");
 
   printf("In the kitchen, you can see pieces of food everywhere on the");
-  printf("floor.\n Funny thing. They're completly dry.\n\n");
+  printf("floor.\n Funny thing. They're completly "BLUE"dry"WHITE".\n\n");
 
   printf("(1) You check the refrigirator if there's anything to eat.\n");
   printf("(2) You check the cupboard fi there's anything left to eat.\n");
@@ -510,16 +510,16 @@ void EmptyKitchen()
  str = getchar();
  char stri;
  stri = getchar();
- if(stri == '1') Refregirator(0);
- else if(stri == '2') Cupboard(0);
+ if(stri == '1') Refregirator(0,0,0);
+ else if(stri == '2') Cupboard(0,0,0);
   else CreatureInBathroom();
 }
 
 //Situation 21
-void Refregirator(int n)
+void Refregirator(int n, int refregirator, int cupboard)
 {
   system("clear");
-
+  refregirator =1;
   n++;
   printf("The refregirator is a mess. But you can find a rotten egg, ");
   printf("two pieces of raw meat (that were supposed to be eaten 2 weeks ago)");
@@ -536,17 +536,17 @@ void Refregirator(int n)
  if(stri == '1') BedroomStay(0);
   else if(stri == '2')
     {
-      if(n<2) SomethingMissing(n);
+      if(n<2) SomethingMissing(n, refregirator, cupboard);
       else Mixture();
     }
   else DEATH5();
 }
 
 //Situation 22
-void Cupboard(int n)
+void Cupboard(int n, int refregirator, int cupboard)
 {
   system("clear");
-
+  cupboard = 1;
   n++;
 
   printf("The cupboard is a mess. But you can find flour, ");
@@ -563,15 +563,15 @@ void Cupboard(int n)
   stri = getchar();
   if(stri == '1') 
     {
-      if(n<2) SomethingMissing(n);
+      if(n<2) SomethingMissing(n,refregirator,cupboard);
       else Mixture();
     }
-  else if(stri == '2') Refregirator(n);
+  else if(stri == '2') Refregirator(n,refregirator,cupboard);
   else DEATH5();
 }
 
 //Situation 23
-void SomethingMissing(int n)
+void SomethingMissing(int n, int refregirator, int cupboard)
 {
   system("clear");
 
@@ -585,11 +585,38 @@ void SomethingMissing(int n)
   str = getchar();
   char stri;
   stri = getchar();
-  if(stri == '1') Refregirator(n);
-  else if(stri == '2') Cupboard(n);
+  if(stri == '1') Refregirator(n,refregirator,cupboard);
+  else if(stri == '2') Cupboard(n,refregirator,cupboard);
   else DEATH5();
 }
 
+//Situation 33.2
+void AlreadyHave(int n, int refregirator, int cupboard)
+{
+  system("clear");
+
+  printf("You already checked there.\n");
+
+  printf("(1) You check the refregirator.\n");
+  printf("(2) You check the cupboard.\n");
+  printf("(3) You eat the ingredients.\n");
+
+  char str;
+  str = getchar();
+  char stri;
+  stri = getchar();
+  if(stri == '1') 
+    {
+      if(refregirator) AlreadyHave(n, refregirator, cupboard);
+      else Refregirator(n,refregirator,cupboard);
+    }
+  else if(stri == '2') 
+    {
+      if(cupboard) AlreadyHave(n, refregirator, cupboard);
+      else Cupboard(n,refregirator,cupboard);
+    }
+  else DEATH5();
+}
 //Situation 24
 void Mixture()
 {
@@ -597,17 +624,17 @@ void Mixture()
 
   printf("The mixture looks surprinsgly good. But it smells so bad...\n\n");
 
-  printf("(1) You put the mixture on the living room's table and hide in your");
-  printf(" bedroom.\n");
-  printf("(2) You turn on the tap water.\n");
+  printf("(1) You put the mixture on the living room's table, turn on the");
+  printf(" tap water and hide in your bedroom.\n");
+  printf("(2) You wake up.\n");
   printf("(3) You eat the mixture.\n");
 
   char str;
   str = getchar();
   char stri;
   stri = getchar();
-  if(stri == '1') Refregirator(0);
-  else if(stri == '2') Cupboard(0);
+  if(stri == '1') TapWaterKitchen();
+  else if(stri == '2') WakeUp();
   else DEATH5();
 }
 
@@ -616,18 +643,20 @@ void StuckCreatureBath()
 {
   system("clear");
 
-  printf("");
-  printf("");
-  printf("");
-  printf("");
+  printf("No movements. You need to do something to put the creature out ");
+  printf("of the bathroom.\n\n");
+  printf("(1) You go see the the creature and say \"I have something for you");
+  printf(" on the table!\"");
+  printf("(2) You go back in the kitchen.\n");
+  printf("(3) You're too tired to do anything else and go to sleep.\n");
 
 char str;
  str = getchar();
  char stri;
  stri = getchar();
- if(stri == '1') Refregirator(0);
- else if(stri == '2') Cupboard(0);
-  else CreatureInBathroom();
+ if(stri == '1') DEATH1();
+ else if(stri == '2') EmptyKitchen();
+ else DEATH4();
 }
 
 //Situation 26
@@ -668,7 +697,7 @@ char str;
  char stri;
  stri = getchar();
  if(stri == '1') LookKitchen();
- else if(stri == '2') Cupboard(0);
+ else if(stri == '2') WaterinBathroom();
   else CreatureInBathroom();
 }
 
@@ -707,8 +736,8 @@ char str;
  str = getchar();
  char stri;
  stri = getchar();
- if(stri == '1') Razor();
- else if(stri == '2') Cupboard(0);
+ if(stri == '1') LookBedroom();
+ else if(stri == '2') Razor();
   else CreatureInBathroom();
 }
 
@@ -779,6 +808,6 @@ void EndOfGame()
 {
   system("clear");
 
-  printf("You made it! You're out of your appartement!");
-  printf(GREEN"SUCCESS"WHITE"!\n");
+  printf("You made it! You're out of your appartement!\n");
+  printf(GREEN"SUCCESS"WHITE"!\n\n\n\n");
 }     
