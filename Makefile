@@ -1,6 +1,6 @@
 CC=clang
 
-CFLAGS= -Wall -Wextra -std=c99 -g
+CFLAGS= -Wall -Wextra -Werror -std=c99 -g
 
 LDFLAGS= -lncurses
 
