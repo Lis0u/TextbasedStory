@@ -45,6 +45,7 @@ void CheckVomit();       //Situation 31
 void Razor();            //Situation 32
 void EndOfGame();        //SUCCESS! End of game
 
+
 char *situation;
 
  /****
@@ -175,6 +176,7 @@ char *situation;
 
    char stri;
    stri = getchar();
+   //printf("stri = %c", stri);
    char str;
    str = getchar();
    if(str == '1') DEATH4();
@@ -295,7 +297,7 @@ char *situation;
    char stri;
    stri = getchar();
    if(stri == '1') EmptyBathroom();
-   else if(stri == '2') KeyHolder();
+   else if(stri == '2') CreatureKitchen();
    else BrokenVase();
  }
 
@@ -500,10 +502,10 @@ void EmptyKitchen()
   system("clear");
 
   printf("In the kitchen, you can see pieces of food everywhere on the");
-  printf("floor.\n Funny thing. They're completly "BLUE"dry"WHITE".\n\n");
+  printf(" floor.\n Funny thing. They're completly "BLUE"dry"WHITE".\n\n");
 
   printf("(1) You check the refrigirator if there's anything to eat.\n");
-  printf("(2) You check the cupboard fi there's anything left to eat.\n");
+  printf("(2) You check the cupboard if there's anything left to eat.\n");
   printf("(3) You eavesdrop on the bathroom door.\n");
 
  char str;
@@ -533,7 +535,7 @@ void Refregirator(int n, int refregirator, int cupboard)
  str = getchar();
  char stri;
  stri = getchar();
- if(stri == '1') BedroomStay(0);
+ if(stri == '1') Cupboard(n,refregirator, cupboard);
   else if(stri == '2')
     {
       if(n<2) SomethingMissing(n, refregirator, cupboard);
@@ -738,7 +740,7 @@ char str;
  stri = getchar();
  if(stri == '1') LookBedroom();
  else if(stri == '2') Razor();
-  else CreatureInBathroom();
+ else CreatureInBathroom();
 }
 
 //Situation 30
