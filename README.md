@@ -1,5 +1,7 @@
 # TextbasedStory
 
+![GitHub top language](https://img.shields.io/github/languages/top/Lis0u/TextbasedStory)
+
 To play the game, clone the repository in your files with either techniques :
 * git clone https://github.com/Lis0u/TextbasedStory.git
 * download the repo.
